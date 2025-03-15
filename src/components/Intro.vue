@@ -50,7 +50,7 @@ export default {
   font-size: 120%;
   position: absolute;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background: #ffffffaa;
   border: 3px solid black;
   border-radius: 10px;
   z-index: 3;
@@ -66,12 +66,12 @@ export default {
     top: 100%;
     margin-top: 2vh;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: #ffffffaa;
     border: 3px solid black;
     border-radius: 10px;
 
     &:hover {
-      color: red;
+      color: #650002;
     }
     img {
       width: 120px;
@@ -88,7 +88,6 @@ export default {
     margin-bottom: 2vh;
     max-width: 192px;
     border-radius: 50%;
-    box-shadow: 0 0 10px black;
     border: 3px solid black;
   }
   .footer {

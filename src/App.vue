@@ -132,32 +132,15 @@ export default {
 <style lang="scss">
 @import "vars";
 
-@font-face {
-  font-family: "Papyrus";
-  src: url("assets/fonts/papyrus.eot"); /* IE9*/
-  src: url("assets/fonts/papyrus.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("assets/fonts/papyrus.woff2") format("woff2"),
-    /* chrome firefox */ url("assets/fonts/papyrus.woff") format("woff"),
-    /* chrome firefox */ url("assets/fonts/papyrus.ttf") format("truetype"),
-    /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("assets/fonts/papyrus.svg#PapyrusW01") format("svg"); /* iOS 4.1- */
-}
-
-@font-face {
-  font-family: PiratesBay;
-  src: url("assets/fonts/piratesbay.ttf");
-  font-display: swap;
-}
-
 html,
 body {
   font-size: 1.2em;
   line-height: 1.4;
-  background: url("assets/background.jpg") center center;
+  background: #f0e0d0;
   background-size: cover;
-  color: white;
+  color: black;
   height: 100%;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
@@ -186,7 +169,7 @@ h4,
 h5 {
   margin: 0;
   text-align: center;
-  font-family: PiratesBay, sans-serif;
+  font-family: sans-serif;
   letter-spacing: 1px;
   font-weight: normal;
 }
@@ -258,25 +241,17 @@ ul {
   padding: 0;
   border: solid 0.125em transparent;
   border-radius: 15px;
-  box-shadow: inset 0 1px 1px #9c9c9c, 0 0 10px #000;
-  background: radial-gradient(
-        at 0 -15%,
-        rgba(#fff, 0.07) 70%,
-        rgba(#fff, 0) 71%
-      )
-      0 0/ 80% 90% no-repeat content-box,
-    linear-gradient(#4e4e4e, #040404) content-box,
-    linear-gradient(#292929, #010101) border-box;
-  color: white;
+  border: 4px solid black;
+  color: black;
   font-weight: bold;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   line-height: 170%;
   margin: 5px auto;
   cursor: pointer;
   transition: all 200ms;
   white-space: nowrap;
   &:hover {
-    color: red;
+    color: $fabled;
+    border-color: $fabled;
   }
   &.disabled {
     color: gray;
@@ -291,29 +266,12 @@ ul {
     height: 10px;
   }
   &.townsfolk {
-    background: radial-gradient(
-          at 0 -15%,
-          rgba(255, 255, 255, 0.07) 70%,
-          rgba(255, 255, 255, 0) 71%
-        )
-        0 0/80% 90% no-repeat content-box,
-      linear-gradient(#0031ad, rgba(5, 0, 0, 0.22)) content-box,
-      linear-gradient(#292929, #001142) border-box;
-    box-shadow: inset 0 1px 1px #002c9c, 0 0 10px #000;
     &:hover:not(.disabled) {
-      color: #008cf7;
+      color: $townsfolk;
     }
   }
   &.demon {
-    background: radial-gradient(
-          at 0 -15%,
-          rgba(255, 255, 255, 0.07) 70%,
-          rgba(255, 255, 255, 0) 71%
-        )
-        0 0/80% 90% no-repeat content-box,
-      linear-gradient(#ad0000, rgba(5, 0, 0, 0.22)) content-box,
-      linear-gradient(#292929, #420000) border-box;
-    box-shadow: inset 0 1px 1px #9c0000, 0 0 10px #000;
+    color: $demon;
   }
 }
 
@@ -331,15 +289,9 @@ video#background {
   left: 0;
   right: 0;
   bottom: 0;
+  background: #8ca1b7;
   top: 0;
   pointer-events: none;
-  background: black;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(1, 22, 46, 1) 50%,
-    rgba(0, 39, 70, 1) 100%
-  );
   opacity: 0;
   transition: opacity 1s ease-in-out;
   &:after {
@@ -348,23 +300,11 @@ video#background {
     width: 100%;
     padding-right: 2000px;
     height: 100%;
-    background: url("assets/clouds.png") repeat;
-    background-size: 2000px auto;
-    animation: move-background 120s linear infinite;
     opacity: 0.3;
   }
 }
 
-@keyframes move-background {
-  from {
-    transform: translate3d(-2000px, 0px, 0px);
-  }
-  to {
-    transform: translate3d(0px, 0px, 0px);
-  }
-}
-
 #app.night > .backdrop {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 </style>

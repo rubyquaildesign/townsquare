@@ -174,7 +174,7 @@ h3 {
     color: $townsfolk;
   }
   aside {
-    background: linear-gradient(-90deg, $townsfolk, transparent);
+    background: linear-gradient(-90deg, $townsfolk, white);
   }
 }
 .outsider {
@@ -182,7 +182,7 @@ h3 {
     color: $outsider;
   }
   aside {
-    background: linear-gradient(-90deg, $outsider, transparent);
+    background: linear-gradient(-90deg, $outsider, white);
   }
 }
 .minion {
@@ -190,7 +190,7 @@ h3 {
     color: $minion;
   }
   aside {
-    background: linear-gradient(-90deg, $minion, transparent);
+    background: linear-gradient(-90deg, $minion, white);
   }
 }
 .demon {
@@ -198,7 +198,7 @@ h3 {
     color: $demon;
   }
   aside {
-    background: linear-gradient(-90deg, $demon, transparent);
+    background: linear-gradient(-90deg, $demon, white);
   }
 }
 
@@ -207,7 +207,7 @@ h3 {
     color: $fabled;
   }
   aside {
-    background: linear-gradient(-90deg, $fabled, transparent);
+    background: linear-gradient(-90deg, $fabled, white);
   }
 }
 
@@ -234,7 +234,6 @@ h3 {
     justify-content: center;
     align-content: center;
     overflow: hidden;
-    text-shadow: 0 0 4px black;
   }
 
   h4 {
@@ -263,9 +262,10 @@ ul {
     flex-grow: 1;
     width: 420px;
     .icon {
-      width: 8vh;
-      background-size: cover;
-      background-position: 0 -5px;
+      width: 4vh;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
       flex-shrink: 0;
       flex-grow: 0;
       &:after {
@@ -284,7 +284,7 @@ ul {
       display: block;
     }
     .player {
-      color: #888;
+      color: black;
       float: right;
       font-size: 60%;
     }
@@ -302,7 +302,7 @@ ul {
   ul {
     li {
       .icon {
-        width: 6vh;
+        width: 4vh;
       }
       .role {
         line-height: 100%;

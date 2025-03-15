@@ -115,7 +115,6 @@ export default {
 
 <style scoped lang="scss">
 ul.reminders .reminder {
-  background: url("../../assets/reminder.png") center center;
   background-size: 100%;
   width: 14vh;
   height: 14vh;
@@ -128,7 +127,6 @@ ul.reminders .reminder {
 
   border-radius: 50%;
   border: 3px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   line-height: 100%;
   transition: transform 500ms ease;
@@ -138,7 +136,7 @@ ul.reminders .reminder {
     top: 0;
     width: 90%;
     height: 90%;
-    background-size: 100%;
+    background-size: 60%;
     background-position: center center;
     background-repeat: no-repeat;
   }

@@ -106,23 +106,19 @@ export default {
   display: flex;
   width: 20%;
   height: 20%;
-  padding: 50px 0 0;
+  padding:70px 0 0;
   align-items: center;
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  background: url("../assets/demon-head.png") center center no-repeat;
   background-size: auto 100%;
 
   li {
     font-weight: bold;
     width: 100%;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.7));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-shadow: 0 2px 1px black, 0 -2px 1px black, 2px 0 1px black,
-      -2px 0 1px black;
 
     span {
       white-space: nowrap;
@@ -131,7 +127,7 @@ export default {
     .meta {
       text-align: center;
       flex-basis: 100%;
-      font-family: PiratesBay, sans-serif;
+      font-family: sans-serif;
       font-weight: normal;
     }
 
@@ -140,13 +136,13 @@ export default {
     }
 
     .players {
-      color: #00f700;
+      color: $traveler;
     }
     .alive {
-      color: #ff4a50;
+      color: $traveler;
     }
     .votes {
-      color: #fff;
+      color: #000000;
     }
     .townsfolk {
       color: $townsfolk;
@@ -166,7 +162,7 @@ export default {
   }
 
   li.edition {
-    width: 220px;
+    width: 170px;
     height: 200px;
     max-width: 100%;
     max-height: 100%;
@@ -175,6 +171,7 @@ export default {
     background-size: 100% auto;
     position: absolute;
     top: -25%;
+    opacity: 0.4;
   }
 }
 </style>

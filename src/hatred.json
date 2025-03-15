@@ -1,10 +1,10 @@
 [
   {
-    "id": "Chambermaid",
+    "id": "Cleaner",
     "hatred": [
       {
         "id": "Mathematician",
-        "reason": "The Chambermaid learns if the Mathematician wakes tonight or not, even though the Chambermaid wakes first."
+        "reason": "The Cleaner learns if the Mathematician wakes tonight or not, even though the Cleaner wakes first."
       }
     ]
   },
@@ -18,11 +18,11 @@
     ]
   },
   {
-    "id": "Lunatic",
+    "id": "Jared Leto",
     "hatred": [
       {
         "id": "Mathematician",
-        "reason": "The Mathematician learns if the Lunatic attacks a different player(s) than the real Demon attacked."
+        "reason": "The Mathematician learns if Jared Leto attacks a different player(s) than the real Demon attacked."
       }
     ]
   },
@@ -89,8 +89,8 @@
     "id": "Al-Hadikhia",
     "hatred": [
       {
-        "id": "Scarlet Woman",
-        "reason": "If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again."
+        "id": "Confidante",
+        "reason": "If there are two living Al-Hadikhias, the Confidante Al-Hadikhia becomes the Confidante again."
       },
       {
         "id": "Mastermind",
@@ -110,8 +110,8 @@
         "reason": "Only 1 jinxed character can be in play. "
       },
       {
-        "id": "Scarlet Woman",
-        "reason": "If there are 5 or more players alive and the player holding the Lil' Monsta token dies, the Scarlet Woman is given the Lil' Monsta token tonight."
+        "id": "Confidante",
+        "reason": "If there are 5 or more players alive and the player holding the Lil' Monsta token dies, the Confidante is given the Lil' Monsta token tonight."
       }
     ]
   },
@@ -141,8 +141,8 @@
     "id": "Fang Gu",
     "hatred": [
       {
-        "id": "Scarlet Woman",
-        "reason": "If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu."
+        "id": "Confidante",
+        "reason": "If the Fang Gu chooses an Outsider and dies, the Confidante does not become the Fang Gu."
       }
     ]
   },
@@ -299,8 +299,8 @@
         "reason": "If a Riot player nominates the Soldier, the Soldier does not die."
       },
       {
-        "id": "Grandmother",
-        "reason": "If a Riot player nominates and kills the Grandchild, the Grandmother dies too."
+        "id": "Grandparent",
+        "reason": "If a Riot player nominates and kills the Grandchild, the Grandparent dies too."
       },
       {
         "id": "King",

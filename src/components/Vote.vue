@@ -265,11 +265,8 @@ export default {
   align-items: center;
   align-content: center;
   justify-content: center;
-  background: url("../assets/demon-head.png") center center no-repeat;
   background-size: auto 75%;
   text-align: center;
-  text-shadow: 0 1px 2px #000000, 0 -1px 2px #000000, 1px 0 2px #000000,
-    -1px 0 2px #000000;
 
   .mark .button {
     font-size: 75%;
@@ -344,7 +341,6 @@ export default {
     background-repeat: no-repeat;
     background-position: center center;
     position: absolute;
-    filter: drop-shadow(0px 0px 3px #000);
   }
   .nominator:before {
     background-image: url("../assets/clock-small.png");

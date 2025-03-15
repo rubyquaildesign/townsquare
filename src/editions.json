@@ -32,7 +32,16 @@
     "author": "The Pandemonium Institute",
     "description": "",
     "level": "Veteran",
-    "roles": ["balloonist", "savant", "amnesiac", "fisherman", "artist", "cannibal", "mutant", "lunatic", "widow", "goblin", "leviathan"],
+    "roles": ["balloonist", "savant", "amnesiac", "fisherman", "artist", "cannibal", "mutant", "leto_lunatic", "widow", "goblin", "leviathan"],
     "isOfficial": true
+  },
+  {
+    "id": "ngr",
+    "name": "No Greater Joy",
+    "author": "Can't remember",
+    "description": "",
+    "level": "Veteran",
+    "roles": ["clockmaker", "artist", "investigator", "empath", "soldier", "cleaner", "drunk", "klutz", "confidante", "baron", "imp"],
+    "isOfficial": false
   }
 ]

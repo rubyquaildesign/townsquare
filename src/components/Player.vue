@@ -384,7 +384,6 @@ export default {
     transform-origin: top center;
     transition: transform 200ms ease-in-out;
     z-index: 2;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
 
     &:before {
       content: " ";
@@ -434,7 +433,6 @@ export default {
     background: url("../assets/life.png") center center;
     background-size: 100%;
     border: 3px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: transform 200ms ease-in-out;
     transform: perspective(400px) rotateY(180deg);
@@ -530,7 +528,6 @@ export default {
 }
 .player .overlay svg {
   position: absolute;
-  filter: drop-shadow(0 0 3px black);
   z-index: 2;
   cursor: pointer;
   &.swap,
@@ -594,8 +591,7 @@ li.move:not(.from) .player .overlay svg.move {
 
 /****** Vote icon ********/
 .player .has-vote {
-  color: #fff;
-  filter: drop-shadow(0 0 3px black);
+  color: $traveler;
   transition: opacity 250ms;
   z-index: 2;
 
@@ -615,14 +611,12 @@ li.move:not(.from) .player .overlay svg.move {
 @mixin glow($name, $color) {
   @keyframes #{$name}-glow {
     0% {
-      box-shadow: 0 0 rgba($color, 1);
       border-color: $color;
     }
     50% {
       border-color: black;
     }
     100% {
-      box-shadow: 0 0 20px 16px transparent;
       border-color: $color;
     }
   }
@@ -647,7 +641,6 @@ li.move:not(.from) .player .overlay svg.move {
   position: absolute;
   width: 100%;
   top: 0;
-  filter: drop-shadow(0px 0px 6px black);
   pointer-events: none;
   display: flex;
   align-items: center;
@@ -663,10 +656,8 @@ li.move:not(.from) .player .overlay svg.move {
     height: 60%;
     width: 60%;
     position: absolute;
-    stroke: white;
-    stroke-width: 15px;
     path {
-      fill: white;
+      fill: black;
     }
   }
 }
@@ -679,8 +670,7 @@ li.move:not(.from) .player .overlay svg.move {
   position: absolute;
   left: 2px;
   margin-top: -15%;
-  color: #fff;
-  filter: drop-shadow(0 0 3px black);
+  color: black;
   cursor: default;
   z-index: 2;
   &.highlight {
@@ -708,16 +698,15 @@ li.move:not(.from) .player .overlay svg.move {
   right: 10%;
   display: flex;
   justify-content: center;
-  font-size: 120%;
+  font-size: 80%;
   line-height: 120%;
   cursor: pointer;
   white-space: nowrap;
   width: 120%;
-  background: rgba(0, 0, 0, 0.5);
+  background:#ffffffaa;
   border: 3px solid black;
   border-radius: 10px;
   top: 5px;
-  box-shadow: 0 0 5px black;
   padding: 0 4px;
 
   svg {
@@ -740,7 +729,7 @@ li.move:not(.from) .player .overlay svg.move {
 
   &:hover .pronouns {
     opacity: 1;
-    color: white;
+    color: black;
   }
 
   .pronouns {
@@ -749,10 +738,9 @@ li.move:not(.from) .player .overlay svg.move {
     right: 110%;
     max-width: 250px;
     z-index: 25;
-    background: rgba(0, 0, 0, 0.5);
+    background: #ffffffaa;
     border-radius: 10px;
     border: 3px solid black;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
     align-items: center;
     pointer-events: none;
     opacity: 0;
@@ -784,13 +772,12 @@ li.move:not(.from) .player .overlay svg.move {
   bottom: -5px;
   text-align: left;
   white-space: nowrap;
-  background: rgba(0, 0, 0, 0.5);
+  background: #ffffffaa;
   padding: 2px 5px;
   border-radius: 10px;
   border: 3px solid #000;
   margin-left: 15px;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
   &:before {
     content: " ";
@@ -805,14 +792,14 @@ li.move:not(.from) .player .overlay svg.move {
   }
 
   li:hover {
-    color: red;
+    color: $demon;
   }
 
   li.disabled {
     cursor: not-allowed;
     opacity: 0.5;
     &:hover {
-      color: white;
+      color: grey;
     }
   }
 
@@ -837,13 +824,14 @@ li.move:not(.from) .player .overlay svg.move {
 
 .player.dead .night-order em {
   color: #ddd;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, gray 100%);
+  background: linear-gradient(180deg, #ffffffaa 0%, gray 100%);
 }
 
 /***** Reminder token *****/
 .circle .reminder {
-  background: url("../assets/reminder.png") center center;
-  background-size: 100%;
+  // background: url("../assets/reminder.png") center center;
+  background-color: #fff;
+  background-size: 70%;
   width: 50%;
   height: 0;
   padding-bottom: 50%;
@@ -854,7 +842,6 @@ li.move:not(.from) .player .overlay svg.move {
   margin: 5px 0 0 -25%;
   border-radius: 50%;
   border: 3px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 200ms;
   cursor: pointer;
 
@@ -869,8 +856,6 @@ li.move:not(.from) .player .overlay svg.move {
     width: 100%;
     position: absolute;
     top: 15%;
-    text-shadow: 0 1px 1px #f6dfbd, 0 -1px 1px #f6dfbd, 1px 0 1px #f6dfbd,
-      -1px 0 1px #f6dfbd;
   }
 
   .icon,
@@ -880,8 +865,8 @@ li.move:not(.from) .player .overlay svg.move {
     top: 0;
     width: 90%;
     height: 90%;
-    background-size: 100%;
-    background-position: center 0;
+    background-size: 60%;
+    background-position: center 40%;
     background-repeat: no-repeat;
     background-image: url("../assets/icons/plus.png");
     transition: opacity 200ms;

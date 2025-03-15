@@ -260,9 +260,10 @@ ul {
     width: 100%;
     margin-bottom: 3px;
     .icon {
-      width: 6vh;
-      background-size: cover;
-      background-position: 0 0;
+      width: 4vh;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
       flex-grow: 0;
       flex-shrink: 0;
       text-align: center;
@@ -280,10 +281,10 @@ ul {
       text-align: right;
       font-size: 110%;
       padding: 5px;
-      border-left: 1px solid rgba(255, 255, 255, 0.4);
-      border-right: 1px solid rgba(255, 255, 255, 0.4);
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
       small {
-        color: #888;
+        color: $traveler;
         margin-right: 5px;
         &.dead {
           text-decoration: line-through;
@@ -297,10 +298,10 @@ ul {
       bottom: 10%;
       width: 500px;
       z-index: 25;
-      background: rgba(0, 0, 0, 0.75);
+      background: #ffffffaa;
+      backdrop-filter: blur(5px);
       border-radius: 10px;
       border: 3px solid black;
-      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
       text-align: left;
       pointer-events: none;
       opacity: 0;
@@ -342,7 +343,7 @@ ul {
   .headline {
     display: block;
     font-weight: bold;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid #000;
     padding: 5px 10px;
     border-radius: 0;
     text-align: center;

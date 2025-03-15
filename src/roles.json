@@ -251,14 +251,14 @@
     "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead."
   },
   {
-    "id": "scarletwoman",
-    "name": "Scarlet Woman",
+    "id": "confidante_scarlet_woman",
+    "name": "Confidante",
     "edition": "tb",
     "team": "minion",
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 19,
-    "otherNightReminder": "If the Scarlet Woman became the Demon today: Show the 'You are' card, then the demon token.",
+    "otherNightReminder": "If the Confidante became the Demon today: Show the 'You are' card, then the demon token.",
     "reminders": ["Demon"],
     "setup": false,
     "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don\u2019t count)"
@@ -355,14 +355,14 @@
     "ability": "You must use a vote token to vote. Dead players may choose to give you theirs. If so, you learn their alignment. You are sober & healthy."
   },
   {
-    "id": "grandmother",
-    "name": "Grandmother",
+    "id": "grandparent",
+    "name": "Grandparent",
     "edition": "bmr",
     "team": "townsfolk",
     "firstNight": 40,
     "firstNightReminder": "Show the marked character token. Point to the marked player.",
     "otherNight": 51,
-    "otherNightReminder": "If the Grandmother\u2019s grandchild was killed by the Demon tonight: The Grandmother dies.",
+    "otherNightReminder": "If the Grandparent\u2019s grandchild was killed by the Demon tonight: The Grandparent dies.",
     "reminders": ["Grandchild"],
     "setup": false,
     "ability": "You start knowing a good player & their character. If the Demon kills them, you die too."
@@ -381,14 +381,14 @@
     "ability": "Each night, choose an alive player: either you or they are drunk until dusk. You can't die."
   },
   {
-    "id": "chambermaid",
-    "name": "Chambermaid",
+    "id": "cleaner_chambermaid",
+    "name": "Cleaner",
     "edition": "bmr",
     "team": "townsfolk",
     "firstNight": 51,
-    "firstNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, \u2026) for how many of those players wake tonight for their ability.",
+    "firstNightReminder": "The Cleaner points to two players. Show the number signal (0, 1, 2, \u2026) for how many of those players wake tonight for their ability.",
     "otherNight": 70,
-    "otherNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, \u2026) for how many of those players wake tonight for their ability.",
+    "otherNightReminder": "The Cleaner points to two players. Show the number signal (0, 1, 2, \u2026) for how many of those players wake tonight for their ability.",
     "reminders": [],
     "setup": false,
     "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability."
@@ -490,8 +490,8 @@
     "ability": "When a Minion dies by execution, all other players (except Travellers) are drunk until dusk tomorrow."
   },
   {
-    "id": "tealady",
-    "name": "Tea Lady",
+    "id": "herbalist",
+    "name": "Herbalist",
     "edition": "bmr",
     "team": "townsfolk",
     "firstNight": 0,
@@ -568,14 +568,14 @@
     "ability": "Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment."
   },
   {
-    "id": "lunatic",
-    "name": "Lunatic",
+    "id": "leto_lunatic",
+    "name": "Jared Leto",
     "edition": "bmr",
     "team": "outsider",
     "firstNight": 8,
-    "firstNightReminder": "If 7 or more players: Show the Lunatic a number of arbitrary 'Minions', players equal to the number of Minions in play. Show 3 character tokens of arbitrary good characters. If the token received by the Lunatic is a Demon that would wake tonight: Allow the Lunatic to do the Demon actions. Place their 'attack' markers. Wake the Demon. Show the Demon\u2019s real character token. Show them the Lunatic player. If the Lunatic attacked players: Show the real demon each marked player. Remove any Lunatic 'attack' markers.",
+    "firstNightReminder": "If 7 or more players: Show Jared Leto a number of arbitrary 'Minions', players equal to the number of Minions in play. Show 3 character tokens of arbitrary good characters. If the token received by Jared Leto is a Demon that would wake tonight: Allow Jared Leto to do the Demon actions. Place their 'attack' markers. Wake the Demon. Show the Demon\u2019s real character token. Show them Jared Leto player. If Jared Leto attacked players: Show the real demon each marked player. Remove Jared Leto 'attack' markers.",
     "otherNight": 20,
-    "otherNightReminder": "Allow the Lunatic to do the actions of the Demon. Place their 'attack' markers. If the Lunatic selected players: Wake the Demon. Show the 'attack' marker, then point to each marked player. Remove any Lunatic 'attack' markers.",
+    "otherNightReminder": "Allow Jared Leto to do the actions of the Demon. Place their 'attack' markers. If Jared Leto selected players: Wake the Demon. Show the 'attack' marker, then point to each marked player. Remove Jared Leto 'attack' markers.",
     "reminders": ["Attack 1",
         "Attack 2",
         "Attack 3"],
@@ -583,14 +583,14 @@
     "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night."
   },
   {
-    "id": "godfather",
-    "name": "Godfather",
+    "id": "caporegime_godfather",
+    "name": "Caporegime",
     "edition": "bmr",
     "team": "minion",
     "firstNight": 21,
     "firstNightReminder": "Show each of the Outsider tokens in play.",
     "otherNight": 37,
-    "otherNightReminder": "If an Outsider died today: The Godfather points to a player. That player dies.",
+    "otherNightReminder": "If an Outsider died today: The Caporegime points to a player. That player dies.",
     "reminders": ["Died today",
         "Dead"],
     "setup": true,
@@ -1740,4 +1740,3 @@
     "ability": "Once per day, you may choose to kill an alive neighbour, if your other alive neighbour agrees."
   }
 ]
-

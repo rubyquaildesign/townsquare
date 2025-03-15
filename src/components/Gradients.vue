@@ -26,9 +26,9 @@ export default {
   data() {
     return {
       gradients: [
-        ["demon", "#ce0100", "#000"],
-        ["townsfolk", "#1f65ff", "#000"],
-        ["default", "#4E4E4E", "#000"]
+        ["demon", "#650002", "#fff"],
+        ["townsfolk", "#114200", "#fff"],
+        ["default", "#2c2b37", "#fff"]
       ]
     };
   }

@@ -37,5 +37,10 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+ "display": "standalone",
+ "background_color": "white",
+ "orientation":"landscape",
+ 
+ "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/refs/heads/master/src/schemas/json/web-manifest.json"
 }

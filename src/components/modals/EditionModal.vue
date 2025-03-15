@@ -210,8 +210,6 @@ ul.editions .edition {
   width: 30%;
   margin: 5px;
   font-size: 120%;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000, 0 0 5px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   &:hover {
     color: red;

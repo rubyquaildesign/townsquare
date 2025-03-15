@@ -182,21 +182,7 @@ ul.tokens {
         display: block;
       }
     }
-    &.townsfolk {
-      box-shadow: 0 0 10px $townsfolk, 0 0 10px #004cff;
-    }
-    &.outsider {
-      box-shadow: 0 0 10px $outsider, 0 0 10px $outsider;
-    }
-    &.minion {
-      box-shadow: 0 0 10px $minion, 0 0 10px $minion;
-    }
-    &.demon {
-      box-shadow: 0 0 10px $demon, 0 0 10px $demon;
-    }
-    &.traveler {
-      box-shadow: 0 0 10px $traveler, 0 0 10px $traveler;
-    }
+
     &:hover {
       transform: scale(1.2);
       z-index: 10;
@@ -204,7 +190,7 @@ ul.tokens {
     .fa-exclamation-triangle {
       position: absolute;
       color: red;
-      filter: drop-shadow(0 0 3px black) drop-shadow(0 0 3px black);
+
       top: 5px;
       right: -5px;
       font-size: 150%;
@@ -218,7 +204,6 @@ ul.tokens {
       width: 100%;
       z-index: 30;
       font-weight: bold;
-      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
       span {
         flex-grow: 1;
       }
@@ -299,7 +284,7 @@ ul.tokens {
       right: -20px;
       bottom: 30px;
       width: 420px;
-      background: rgba(0, 0, 0, 0.75);
+      background: #ffffffaa;
       padding: 5px;
       border-radius: 10px;
       border: 2px solid black;

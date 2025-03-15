@@ -59,10 +59,13 @@ export default {
 }
 
 .modal {
-  background: rgba(0, 0, 0, 0.8);
+  background: #ffffffaa;
+  backdrop-filter: blur(5px);
   padding: 10px 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 20px 1px #000;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
   display: flex;
   flex-direction: column;
   max-height: 80%;
@@ -113,7 +116,7 @@ export default {
 }
 
 .maximized {
-  background: rgba(0, 0, 0, 0.95);
+  background: #ffffffaa;
   padding: 0;
   border-radius: 0;
   height: 100%;

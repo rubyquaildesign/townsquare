@@ -8,7 +8,7 @@
           role.image && grimoire.isImageOptIn
             ? role.image
             : require('../assets/icons/' + (role.imageAlt || role.id) + '.png')
-        })`
+        })`,
       }"
     ></span>
     <span
@@ -54,29 +54,29 @@ export default {
   props: {
     role: {
       type: Object,
-      default: () => ({})
-    }
+      default: () => ({}),
+    },
   },
   computed: {
-    reminderLeaves: function() {
+    reminderLeaves: function () {
       return (
         (this.role.reminders || []).length +
         (this.role.remindersGlobal || []).length
       );
     },
-    ...mapState(["grimoire"])
+    ...mapState(["grimoire"]),
   },
   data() {
     return {};
   },
   filters: {
-    nameToFontSize: name => (name && name.length > 10 ? "90%" : "110%")
+    nameToFontSize: (name) => (name && name.length > 10 ? "90%" : "110%"),
   },
   methods: {
     setRole() {
       this.$emit("set-role");
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -84,11 +84,10 @@ export default {
 .token {
   border-radius: 50%;
   width: 100%;
-  background: url("../assets/token.png") center center;
+  background-color: #fff;
   background-size: 100%;
   text-align: center;
-  border: 3px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 5px solid black;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -101,18 +100,15 @@ export default {
     @-moz-document url-prefix() {
       &.mozilla {
         stroke: none;
-        filter: drop-shadow(0 1.5px 0 black) drop-shadow(0 -1.5px 0 black)
-          drop-shadow(1.5px 0 0 black) drop-shadow(-1.5px 0 0 black)
-          drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
       }
     }
   }
 
   .icon,
   &:before {
-    background-size: 100%;
+    background-size: 60%;
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: center 40%;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -162,15 +158,12 @@ export default {
   .name {
     width: 100%;
     height: 100%;
-    font-size: 24px; // svg fonts are relative to document font size
+    font-size: 16px; // svg fonts are relative to document font size
     .label {
       fill: black;
-      stroke: white;
-      stroke-width: 2px;
       paint-order: stroke;
-      font-family: "Papyrus", serif;
+      font-family: sans-serif, serif;
       font-weight: bold;
-      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
       letter-spacing: 1px;
 
       @-moz-document url-prefix() {
@@ -178,9 +171,6 @@ export default {
           // Vue doesn't support scoped media queries, so we have to use a second css class
           stroke: none;
           text-shadow: none;
-          filter: drop-shadow(0 1.5px 0 white) drop-shadow(0 -1.5px 0 white)
-            drop-shadow(1.5px 0 0 white) drop-shadow(-1.5px 0 0 white)
-            drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
         }
       }
     }
@@ -204,10 +194,9 @@ export default {
     width: 250px;
     z-index: 25;
     font-size: 80%;
-    background: rgba(0, 0, 0, 0.5);
+    background: #ffffffaa;
     border-radius: 10px;
     border: 3px solid black;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
     text-align: left;
     justify-items: center;
     align-content: center;
